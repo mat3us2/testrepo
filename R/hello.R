@@ -13,8 +13,22 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 
-hello <- function() {
+#' Title
+#'
+#' @param z A character (string).
+#'
+#' @return Prints stuff.
+#' @export
+#'
+#' @examples
+#' hello("asdf")
+#' hello(1)
+
+hello <- function(z) {
+  if(!is.character(z)) stop("`z` is not a character.")
   print("Hello, world!")
   print("Something new.")
   print("More.")
+  print("Last.")
+  print(z)
 }
