@@ -31,4 +31,5 @@ hello <- function(z) {
   print("More.")
   print("Last.")
   print(z)
+  print("remote")
 }
