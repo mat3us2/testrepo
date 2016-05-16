@@ -32,4 +32,5 @@ hello <- function(z) {
   print("Last.")
   print(z)
   print("remote")
+  print("proxy")
 }
